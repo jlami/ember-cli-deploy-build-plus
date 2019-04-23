@@ -68,7 +68,7 @@ module.exports = {
 
   createDeployPlugin: function(options) {
     var DeployPlugin = DeployPluginBase.extend({
-      name: options.name,
+      name: 'build',
       defaultConfig: {
         environment: 'production',
         outputPath: 'tmp' + path.sep + 'deploy-dist',
